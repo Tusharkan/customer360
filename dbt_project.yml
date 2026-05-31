@@ -1,8 +1,8 @@
-name: "dbt_analytics"
+name: "customer360"
 version: "1.0.0"
 config-version: 2
 
-profile: "dbt_analytics"
+profile: "customer360"
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -17,7 +17,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  dbt_analytics:
+  customer360:
     staging:
       +materialized: view
 
